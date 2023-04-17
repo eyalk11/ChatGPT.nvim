@@ -9,6 +9,7 @@ local Config = require("chatgpt.config")
 local Utils = require("chatgpt.utils")
 local Spinner = require("chatgpt.spinner")
 local Settings = require("chatgpt.settings")
+local Log = require("chatgpt.log")
 
 EDIT_FUNCTION_ARGUMENTS = {
   function_call = {

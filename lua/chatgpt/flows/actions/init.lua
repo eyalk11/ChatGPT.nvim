@@ -24,7 +24,6 @@ local read_actions_from_file = function(filename)
   return vim.json.decode(json_string)
 end
 
-
 function M.read_actions()
   local actions = {}
   local paths = {}

@@ -1,5 +1,3 @@
--- ASCII-ART credits:
---  https://www.reddit.com/r/ASCII_Archive/comments/iga1d4/your_robot_friend/
 WELCOME_MESSAGE = [[
  
      If you don't ask the right questions,
@@ -61,7 +59,6 @@ function M.defaults()
       },
     },
     popup_window = {
-      filetype = "chatgpt",
       border = {
         highlight = "FloatBorder",
         style = "rounded",
@@ -71,6 +68,9 @@ function M.defaults()
       },
       win_options = {
         winhighlight = "Normal:Normal,FloatBorder:FloatBorder",
+      },
+      buf_options = {
+        filetype = "markdown",
       },
     },
     popup_input = {
@@ -115,6 +115,7 @@ function M.defaults()
       n = 1,
     },
     actions_paths = {},
+    show_quickfixes_cmd = "Trouble quickfix",
     predefined_chat_gpt_prompts = "https://raw.githubusercontent.com/f/awesome-chatgpt-prompts/main/prompts.csv",
   }
   return defaults

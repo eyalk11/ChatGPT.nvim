@@ -95,7 +95,7 @@ M.complete = function()
     end
 
     vim.api.nvim_buf_set_lines(buffer, start_row, start_row, true, empty_lines)
-    Signs.set_for_lines(buffer, start_row - 1, start_row - 1 + #lines - 1,'buf')
+    Signs.set_for_lines(buffer, start_row - 1, start_row - 1 + #lines - 1, "buf")
     vim.api.nvim_buf_set_lines(popup.bufnr, 0, 1, false, lines)
 
     for i = 0, #lines - 1, 1 do

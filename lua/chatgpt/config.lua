@@ -29,7 +29,7 @@ function M.defaults()
       max_line_length = 120,
       sessions_window = {
         border = {
-          style = "rounded",
+          style = "single",
           text = {
             top = " Sessions ",
           },
@@ -74,8 +74,7 @@ function M.defaults()
     },
     popup_window = {
       border = {
-        highlight = "FloatBorder",
-        style = "rounded",
+        style = "single",
         text = {
           top = " ChatGPT ",
         },
@@ -87,7 +86,7 @@ function M.defaults()
         winhighlight = "Normal:Normal,FloatBorder:FloatBorder",
       },
       buf_options = {
-        filetype = "markdown",
+        filetype = "markdown"
       },
     },
     system_window = {
@@ -108,8 +107,7 @@ function M.defaults()
     popup_input = {
       prompt = "  ",
       border = {
-        highlight = "FloatBorder",
-        style = "rounded",
+        style = "single",
         text = {
           top_align = "center",
           top = " Prompt ",
@@ -124,7 +122,7 @@ function M.defaults()
     },
     settings_window = {
       border = {
-        style = "rounded",
+        style = "single",
         text = {
           top = " Settings ",
         },
@@ -153,8 +151,8 @@ function M.defaults()
     use_openai_functions_for_edits = false,
     actions_paths = {},
     show_quickfixes_cmd = "Trouble quickfix",
-    predefined_chat_gpt_prompts = "https://raw.githubusercontent.com/f/awesome-chatgpt-prompts/main/prompts.csv",
-    log_file = "chatgpt.log",
+    predefined_chat_gpt_prompts = "https://raw.githubusercontent.com/f/awesome-chatgpt-prompts/main/prompts.csv"
+    log_file= "~\\.vim\\chatgpt.log"
   }
   return defaults
 end

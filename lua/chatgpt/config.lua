@@ -151,8 +151,8 @@ function M.defaults()
     use_openai_functions_for_edits = false,
     actions_paths = {},
     show_quickfixes_cmd = "Trouble quickfix",
-    predefined_chat_gpt_prompts = "https://raw.githubusercontent.com/f/awesome-chatgpt-prompts/main/prompts.csv"
-    log_file= "~\\.vim\\chatgpt.log"
+    predefined_chat_gpt_prompts = "https://raw.githubusercontent.com/f/awesome-chatgpt-prompts/main/prompts.csv",
+    log_file= "c:\\users\\ekarni\\.vim\\chatgpt.log"
   }
   return defaults
 end
